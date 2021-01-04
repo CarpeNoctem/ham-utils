@@ -5,7 +5,7 @@
 
 read -p 'Please close any other programs using your gps device and then hit Enter to continue.' gogo;
 
-sudo apt -y install gpsd chrony; #gpsd-clients
+sudo apt -y install gpsd chrony gpsd-clients;
 
 # Consider auto-detecting with grepping for 'source "/dev/tty.*" added' in dmesg output to make useful not only for IC-705
 # IC-705 is ttyACM1, ublox shows as ttyACM0, my old BU-353 showed as ttyUSB0
